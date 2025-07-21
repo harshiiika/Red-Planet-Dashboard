@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars Weather Command Center</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="space-background"></div>
+    <div class="command-center-overlay"></div>
+    <div class="stars"></div>
+    <div class="nebula"></div>
+
+    <div class="planet-system">
+        <div class="mars-planet"></div>
+        <div class="earth-planet"></div>
+        <div class="rocket"></div>
+    </div>
+
+    <div class="alert-system" id="alertSystem"></div>
+
+    <div class="command-header">
+        <div class="container-fluid">
+            <h1 class="command-title">MARS WEATHER COMMAND</h1>
+            <div class="mission-status">
+                <div class="status-panel">
+                    <div class="status-indicator online"></div>
+                    <span><i class="fas fa-robot"></i> ROVER ACTIVE</span>
+                </div>
+                <div class="status-panel">
+                    <div class="status-indicator warning"></div>
+                    <span><i class="fas fa-satellite-dish"></i> DATA SYNC</span>
+                </div>
+                <div class="status-panel">
+                    <div class="status-indicator online"></div>
+                    <span><i class="fas fa-wifi"></i> SIGNAL STRONG</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-4">
+        <div class="row mb-5">
+            <div class="col-lg-5">
+                <div class="glass-card weather-showcase">
+                    <h2 class="text-center mb-4" style="font-family: 'Orbitron', monospace; color: var(--neon-cyan);">
+                        <i class="fas fa-map-marker-alt"></i> CURRENT CONDITIONS
+                    </h2>
+                    <div class="weather-icon-display">
+                        <i id="weatherIcon" class="fas fa-wind"></i>
+                    </div>
+                    <div class="temperature-massive" id="currentTemp">-63°C</div>
+                    <h3 class="mb-4" id="weatherDescription" style="color: var(--mars-yellow);">Dust Storm Approaching
+                    </h3>
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <small class="text-muted">Sol Day</small><br>
+                            <strong id="solDay" style="color: var(--neon-green);">3847</strong>
+                        </div>
+                        <div>
+                            <small class="text-muted">Earth Date</small><br>
+                            <strong id="earthDate" style="color: var(--neon-green);">July 20, 2025</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <div class="glass-card">
+                    <h2 class="mb-4" style="font-family: 'Orbitron', monospace; color: var(--neon-cyan);">
+                        <i class="fas fa-chart-area"></i> ATMOSPHERIC MATRIX
+                    </h2>
+                    <div class="data-matrix">
+                        <div class="data-pod">
+                            <div class="data-label"><i class="fas fa-wind"></i> Wind Velocity</div>
+                            <div class="data-value" id="windSpeed">12.3 m/s</div>
+                            <div class="data-trend trend-up">
+                                <i class="fas fa-arrow-up"></i> <span id="windTrend">+2.1 m/s</span>
+                            </div>
+                        </div>
+                        <div class="data-pod">
+                            <div class="data-label"><i class="fas fa-thermometer"></i> Pressure</div>
+                            <div class="data-value" id="pressure">687 Pa</div>
+                            <div class="data-trend trend-down">
+                                <i class="fas fa-arrow-down"></i> <span id="pressureTrend">-15 Pa</span>
+                            </div>
+                        </div>
+                        <div class="data-pod">
+                            <div class="data-label"><i class="fas fa-tint"></i> Humidity</div>
+                            <div class="data-value" id="humidity">2.1%</div>
+                            <div class="data-trend trend-up">
+                                <i class="fas fa-arrow-up"></i> <span id="humidityTrend">+0.3%</span>
+                            </div>
+                        </div>
+                        <div class="data-pod">
+                            <div class="data-label"><i class="fas fa-sun"></i> UV Radiation</div>
+                            <div class="data-value" id="uvIndex">8.7</div>
+                            <div class="data-trend trend-down">
+                                <i class="fas fa-arrow-down"></i> <span id="uvTrend">-1.2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-lg-6">
+                <div class="glass-card">
+                    <h3 class="mb-3" style="font-family: 'Orbitron', monospace; color: var(--neon-cyan);">
+                        <i class="fas fa-chart-line"></i> TEMPERATURE ANALYSIS
+                    </h3>
+                    <div class="chart-wrapper">
+                        <canvas id="temperatureChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="glass-card">
+                    <h3 class="mb-3" style="font-family: 'Orbitron', monospace; color: var(--neon-cyan);">
+                        <i class="fas fa-chart-bar"></i> ATMOSPHERIC DYNAMICS
+                    </h3>
+                    <div class="chart-wrapper">
+                        <canvas id="atmosphericChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="glass-card">
+                    <h2 class="text-center mb-5" style="font-family: 'Orbitron', monospace; color: var(--neon-pink);">
+                        <i class="fas fa-globe-americas"></i> PLANETARY BATTLEGROUND
+                    </h2>
+                    <div class="planet-arena">
+                        <div class="planet-display mars-display">
+                            <div class="planet-visual mars-visual"></div>
+                            <h3 style="color: var(--mars-orange); font-family: 'Orbitron', monospace;">MARS</h3>
+                            <div class="comparison-data">
+                                <p>Avg. Temp: <strong id="marsAvgTemp">-63°C</strong></p>
+                                <p>Pressure: <strong id="marsPressure">600 Pa</strong></p>
+                                <p>Water: <strong id="marsWater">Trace</strong></p>
+                                <p>Gravity: <strong id="marsGravity">0.38 G</strong></p>
+                                <p>Day Length: <strong id="marsDayLength">24.6 hrs</strong></p>
+                            </div>
+                        </div>
+                        <div class="planet-display earth-display">
+                            <div class="planet-visual earth-visual"></div>
+                            <h3 style="color: var(--earth-blue); font-family: 'Orbitron', monospace;">EARTH</h3>
+                            <div class="comparison-data">
+                                <p>Avg. Temp: <strong id="earthAvgTemp">15°C</strong></p>
+                                <p>Pressure: <strong id="earthPressure">101325 Pa</strong></p>
+                                <p>Water: <strong id="earthWater">71% Surface</strong></p>
+                                <p>Gravity: <strong id="earthGravity">1 G</strong></p>
+                                <p>Day Length: <strong id="earthDayLength">24 hrs</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+</body>
+
+</html>
