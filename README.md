@@ -19,7 +19,7 @@ Built to represent the **Data Visualizer track**, this dashboard immerses users 
 🌍 [**Visit Live Website**](https://red-planet-dashboard.vercel.app/)
 
 ## 🎥 Project Showcase  
-🎬 [**Watch Demo Video**](https://drive.google.com/file/d/18P2q9s0-bMTEj9cX402l1OrIm7pGGrAq/view?usp=drive_link ))
+🎬 [**Watch Demo Video**](https://drive.google.com/file/d/18P2q9s0-bMTEj9cX402l1OrIm7pGGrAq/view?usp=drive_link )
 
 ---
 
