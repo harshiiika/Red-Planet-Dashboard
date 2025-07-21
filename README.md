@@ -51,7 +51,6 @@ Built to represent the **Data Visualizer track**, this dashboard immerses users 
 | **Styling**    | Bootstrap 5, Custom CSS Variables   |
 | **Charts**     | Chart.js                            |
 | **Icons**      | Font Awesome                        |
-| **Fonts**      | Google Fonts (Orbitron, Rajdhani)   |
 
 ---
 
