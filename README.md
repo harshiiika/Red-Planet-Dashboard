@@ -1,9 +1,10 @@
 # 🚀 Red-Planet-Dashboard  
 **A Real-Time Mars Weather Monitoring Dashboard**
 
-![Dashboard Screenshot](screenshots/dashboard.png)  
-![Weather Alerts](screenshots/alerts.png)  
-![Data Charts](screenshots/charts.png)
+![Weather Alerts](MARSWEATHERCOMMAND/Screenshots/Screenshot%202025-07-21%20142035.png)  
+![Dashboard](MARSWEATHERCOMMAND/Screenshots/Screenshot%202025-07-21%20142116.png)  
+![Data Charts](MARSWEATHERCOMMAND/Screenshots/Screenshot%202025-07-21%20142336.png)  
+![Comparison with Earth](MARSWEATHERCOMMAND/Screenshots/Screenshot%202025-07-21%20142607.png)  
 
 ---
 
@@ -16,7 +17,7 @@
 [🔗 View Live Project](https://your-live-project-link.com)
 
 ## 🎥 Project Showcase  
-[▶️ Watch Demo Video](https://your-demo-video-link.com)
+[▶️ Watch Demo Video](MarsWeatherCommand\demo-video.mp4)
 
 ---
 
@@ -41,19 +42,6 @@
 
 ## 🎯 Hackathon Theme Alignment  
 Created for the **Data Visualizer** track of Nebula Nexus, this project transforms raw meteorological data into captivating visual stories that bring Mars exploration to life.
-
----
-
-## 📸 Screenshots  
-- **Dashboard Overview**  
-  ![Dashboard](screenshots/dashboard.png)
-  
-
-- **Weather Alerts**  
-  ![Alerts](screenshots/alerts.png)
-
-- **Data Charts**  
-  ![Charts](screenshots/charts.png)
 
 ---
 
