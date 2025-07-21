@@ -1,10 +1,10 @@
 # 🚀 Red-Planet-Dashboard  
 **A Real-Time Mars Weather Monitoring Dashboard**
 
-![Weather Alerts](MARSWEATHERCOMMAND/Screenshots/Screenshot%202025-07-21%20142035.png)  
-![Dashboard](MARSWEATHERCOMMAND/Screenshots/Screenshot%202025-07-21%20142116.png)  
-![Data Charts](MARSWEATHERCOMMAND/Screenshots/Screenshot%202025-07-21%20142336.png)  
-![Comparison with Earth](MARSWEATHERCOMMAND/Screenshots/Screenshot%202025-07-21%20142607.png)  
+![Weather Alerts](MarsWeatherCommand/Screenshots/Screenshot%202025-07-21%20142035.png)  
+![Dashboard](MarsWeatherCommand/Screenshots/Screenshot%202025-07-21%20142116.png)  
+![Data Charts](MarsWeatherCommand/Screenshots/Screenshot%202025-07-21%20142336.png)  
+![Comparison with Earth](MarsWeatherCommand/Screenshots/Screenshot%202025-07-21%20142607.png)  
 
 ---
 
@@ -14,7 +14,7 @@
 ---
 
 ## ✨ Live Demo  
-[🔗 View Live Project](https://your-live-project-link.com)
+[🔗 View Live Project](https://red-planet-dashboard.vercel.app/)
 
 ## 🎥 Project Showcase  
 [▶️ Watch Demo Video](MarsWeatherCommand\demo-video.mp4)
